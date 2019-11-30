@@ -9,13 +9,12 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	
-	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-  	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Darker+Grotesque:400,600,800|Fredericka+the+Great&display=swap" rel="stylesheet">
+
   <style>
-  
+
   	body {
 	background-color: #27222D;
-    font: 400 15px Lato, sans-serif;
     line-height: 1.8;
     color: beige;
  	}
@@ -23,20 +22,33 @@
 	body, html {
 	height: 100%;
 	}
-  
-  	h2 {
-    font-size: 24px;
+
+  	h1 {
+	font: 400 30px 'Fredericka the Great', cursive;
     text-transform: uppercase;
-    font-weight: 600;
     margin-bottom: 30px;
   	}
-  
-  	h4 {
-    font-size: 19px;
-    font-weight: 400;
-    margin-bottom: 30px;
+
+  	h2 {
+	font: 800 30px 'Darker Grotesque', sans-serif;
+    margin-bottom: 20px;
  	}
-  
+
+	h3 {
+	font: 600 22px 'Darker Grotesque', sans-serif;
+    margin-bottom: 10px;
+ 	}
+	
+	h4 {
+	font: 600 20px 'Darker Grotesque', sans-serif;
+	margin-bottom: 0px;
+ 	}
+
+	p {
+	font: 400 18px 'Darker Grotesque', sans-serif;
+	margin-bottom: 20px;
+  	}
+
   	.container-fluid {
     padding: 60px 50px;
   	}
@@ -45,48 +57,39 @@
     background-color:#91FDD0;
 	color: #27222D;
 	}
-	
-	.col-sm-3{
-	padding-top: 10px;
-	}
-	
+
 	.row-nav{
 	padding-top: 5px;
 	padding-bottom: 5px;
 	}
 
-	.jumbotron{
-	background-image: url("07.jpg");
+	.navbar{
+	background-color: black;
+	}
+
+	.col-sm-4{
+	padding-bottom: 15px;
+	}
+
+	.col-lg-2{
+	padding-bottom; 15px;
 	}
  
- 	.thumbnail {
-    padding: 0 0 15px 0;
-    border: none;
-    border-radius: 0;
-  	}
- 
- 	.thumbnail img {
-    width: 100%;
-    height: 100%;
-    margin-bottom: 10px;
-  	}
- 
+	li {
+	font: 400 20px 'Fredericka the Great', cursive;
+	}
+	
 	a{
-	color:bisque;
+	color:#fff;
 	}
 			
-	li a:hover {
-   	color:aquamarine;
-  	}
- 
- 	footer .glyphicon {
-    font-size: 20px;
-    margin-bottom: 20px;
-    color: black;
+	a:hover {
+   	color:#91FDD0;
+	font-family: 'Fredericka the Great', cursive;
   	}
 	  
 	.hero-image {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Photo by Henry Be on Unsplash.jpg");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Photo by Giorgia Sormani on Unsplash.jpg");
 	height: 100%;
 	background-position: center;
   	background-repeat: no-repeat;
@@ -95,7 +98,7 @@
 	}
 			
 	.hero-text {
-	font-size: 50px;
+	font: 50px 'Fredericka the Great', cursive;
   	text-align: center;
   	position: absolute;
   	top: 50%;
@@ -103,165 +106,174 @@
   	transform: translate(-50%, -50%);
   	color: white;
 	}
-	  
+
   </style>
   
 </head>
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-	<nav class="navbar navbar-default navbar-fixed-top">
-		<div class="row-nav container-fluid">
-			
-			<div class="col-sm-2">
-				<a class="navbar-brand" href="#"><img src="#" alt="Oma logo" style="height:40px;"></a>
-			</div>
-			
-			<div class="col-sm-10 justify-content-end d-flex">
-					<ul class="nav">
-    					<li class="nav-item"><a class="nav-link" href="kuka"><h4>KUKA</h4></a></li>
-    					<li class="nav-item"><a class="nav-link" href="portfolio"><h4>PORTFOLIO</h4></a></li>
-    					<li class="nav-item"><a class="nav-link" href="yhteystiedot"><h4>YHTEYSTIEDOT</h4></a></li>
-					</ul>
-   		 		</div>
-			</div>
+	<nav class="navbar navbar-expand-md fixed-top">
+		<a class="navbar-brand" href="#"><img src="logo_green.png" alt="A.R. -logo" style="height:30px"></a>
+		<button class="navbar-dark navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">	
+			<ul class="navbar-nav">
+    			<li class="nav-item"><a class="nav-link" href="#kuka">KUKA</a></li>
+    			<li class="nav-item"><a class="nav-link" href="#portfolio">PORTFOLIO</a></li>
+    			<li class="nav-item"><a class="nav-link" href="#yhteystiedot">YHTEYSTIEDOT</a></li>
+			</ul>
+		</div>
 	</nav>
 
-	<div id="kuka" class="hero-image">
+	<div class="hero-image">
   		<div class="hero-text">
-    		<p>HEI, MINÄ OLEN ANNA</p>
-			<h4>Hauska tutustua.</h4>
+    		Hei, minä olen Anna Rajainmaa<br>
+			<small>Hauska tutustua</small>
 		</div>
 	</div>
 
 <!-- Container (esittely) -->
 <div id="kuka" class="container-fluid">
   <div class="row">
-    <div class="col-sm-8">
-      <h2>KUKA?</h2><br>
-      <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-    <div class="col-sm-4">
-      <img src="sanfran.jpg" alt="San Francisco">
+	  <div class="col-sm">
+		<h1 style="color: #91FDD0;">KUKA?</h1>
+		<h2 >Ikuinen opiskelija. Luova ongelmanratkaisija. Alanvaihtaja. Nörttikuoroilija. Koiraihminen ilman koiraa.</h2>
+	  </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-5" style="border-right: 1px solid #91FDD0;">
+	  <p>Lähes kaksi vuotta sitten lähdin kouluttautumaan uudelle alalle, toiveena löytää työ, jossa saan jatkuvasti kehittyä ja oppia uutta. Luova ongelmanratkaiseminen, loogisuus ja koneiden kanssa puuhaaminen on myös aina ollut oleellinen osa sekä töitäni että persoonaani, joten uuden alan keksiminen ei ollut vaikeaa.</p>
+	  <p style="text-align: right;">Ilokseni olen huomannut, että pystyn edelleen oppimaan ja omaksumaan asioita nopeasti ja saan valtavasti energiaa siitä, kun opin uutta tai saan lopulta ratkaistua ongelman, jonka kanssa olen pitkään paininut. Haluan pystyä heittäytymään tämän uuden alan pariin kunnolla, tekemään töitä oikeissa projekteissa ja kehittyä juuri niissä asioissa, joita työelämässä tarvitaan.</p>
+	  <p>Alun perin ajattelin lähteneeni opiskelemaan ohjelmointia. Front-end kiehtoo minua edelleen suuresti, mutta olen samalla ihastunut koko ajan enemmän ja enemmän UI/UX -suunnitteluun. Minusta on aina ollut mielenkiintoista miettiä, miten asioita voitaisiin tehdä nopeammin, paremmin, helpommin ja kauniimmin, ja nyt olen päässyt tekemään tätä ihan luvan kanssa! Oma unelmacomboni olisi todennäköisesti sekoitus front-endiä ja UI/UX -suunnittelua.</p>
+	  <p style="text-align: right;">Mitä minä voisin sitten tarjota, tällaisena raakileena, jolla on paljon intoa mutta vähän kokemusta? Ainakin paperikonservaattorin loputtoman kiinnostuksen yksityiskohtiin ja pitkäjänteisyyttä vaativiin tehtäviin; entisen journalistiikan opiskelijan uteliaisuuden, kunnioituksen deadlineja kohtaan ja hyvät kirjalliset taidot; järjestölehden päätoimittajan projetkinhallinta- ja ryhmätyötaidot, taittajan rakkauden säätämiseen, linjoihin, InDesigniin ja Photshoppiin. Sinisilmäisen uskon siihen, että ei ole mitään, mitä en osaa, jos vain saan tilaisuuden oppia.</p>
+	  <p style="margin-bottom: 5px;">Haluatko kokeilla taitojasi timantin hiomisessa? Niin minäkin.</p>
+	</div>
+    <div class="col-sm-7 text-center">
+      <img src="mie.jpg" alt="Marraskuinen omakuva. Ympyrätalon nurkalla tuulee aina." height="500">
     </div>
   </div>
 </div>
 
 <!-- Container (portfolio) -->
 	<div id="portfolio" class="container-fluid text-center bg-green">
-  		<h2>Portfolio</h2>
-  		<h4>Mitä sitä onkaan tullut tehtyä?</h4>
+  		<h1 style="color: #27222D;">Portfolio</h1>
+		  <p>(Prototyyppejä, suunnittelua, testausta, haastatteluja, vaatimusmäärittelyjä, vähän lisää suunnittelua ja hiukan front-endiä.)</p>
+		  <br>
   	<div class="row text-center">
     	<div class="col-sm">
-      		<div class="thumbnail">
-        		<img src="paris.jpg" alt="Paris" width="400" height="300">
-        		<p><strong>Paris</strong></p>
-        		<p>Yes, we built Paris</p>
-      		</div>
+			<a href="http://myy.haaga-helia.fi/~a1800254/mobilePay1.html" target="_blank"><img src="mobilepay_proto.jpg" class="rounded" alt="Linkki prototyypin esittelysivulle" width="75%"></a>
+        	<p><strong>Ensimmäinen suunnitelma</strong></p>
+        	<p>Idea Mobile Pay -sovellukseen. Sivut ovat ensimmäiset kasaamani 20 vuoteen - uskallan väittää että kehitystä on sen jälkeen tapahtunut - ja esittelevät sovelluksemme ideointia ja taustatyötä. 3/2018.</p>
+		</div>    	
+    	<div class="col-sm">
+				<a href="https://prezi.com/p/-keoqoydokmc/vedenvaki/" target="_blank"><img src="vedenvaki_tn.jpg" class="rounded" alt="Linkki sovelluksen prezi-esitykseen." width="75%"></a>
+        		<p><strong>Vedenväki</strong></p>
+        		<p>Ideointia, toimintaympäristön kartoitusta ja prototyyppi, tarkoituksena kehittää sovellus jolla edistetään vesistömatkailua Helsingin saaristossa. Prototyypin AR-osuus oli parini työsarkaa, itse sain keskittyä prototyypin ja esitysten rakentamiseen. Proton kaunis kuvitusmateriaali taas on törkeästi napattu kirjasta "Suomalaiset taruolennot" ja on kuvittaja Sirkku Linnean käsialaa. 9/2019</p>
     	</div>
     	<div class="col-sm">
-      		<div class="thumbnail">
-        		<img src="newyork.jpg" alt="New York" width="400" height="300">
-        		<p><strong>New York</strong></p>
-        		<p>We built New York</p>
-      		</div>
-    	</div>
-    	<div class="col-sm">
-    	  	<div class="thumbnail">
-        		<img src="sanfran.jpg" alt="San Francisco" width="400" height="300">
-        		<p><strong>San Francisco</strong></p>
-        		<p>Yes, San Fran is ours</p>
-      		</div>
-    	</div>
-	  	<div class="col-sm">
-      		<div class="thumbnail">
-        		<img src="paris.jpg" alt="Paris" width="400" height="300">
-        		<p><strong>Paris</strong></p>
-        		<p>Yes, we built Paris</p>
-      		</div>
+			<a href="https://github.com/roradath/web-exhibition-template" target="_blank"><img src="kark_tn.jpg" class="rounded" alt="Linkki GitHub-repoon" width="75%"></a>
+        	<p><strong>Helsingin kaupunginarkisto</strong></p>
+        	<p>Verkkonäyttelypohja Helsingin kaupunginarkiston näyttelytoiminnan tueksi. Ensimmäinen staattinen versio toteutettu 9/2019, kuvan linkistä voi halutessaan käydä GitHubissa kurkkimassa miltä se näytti. Nyt projekti jatkuu WordPressin puolella, tavoitteena julkaista seuraava versio kaupunginarkiston tarkasteltavaksi joulukuun puolivälissä. 
+			<br><a href="https://arajainmaa.com" target="_blank" style="font-weight:600; color: #99003d">Tästä</a> voi sitten tarkistaa, miten kävi.</p>
     	</div>
   </div>
 		<br>
-		<h2>Työkalut</h2>
-  	<div class="row">
-    	<div class="col-sm-3">
-			<img src="#" alt="">
-      		<h4>SÄHKÖPOSTI</h4>
-      		<p>arajainmaa@gmail.com</p>
+		<h1 style="color: #27222D;">Työkalut</h1>
+		<p><img src="tahti.png" alt="Yksi tähti" height="15px"> Pintaa on alettu raaputella esiin ja kaikki on hämmentävää.<br>
+		<img src="tahti5.png" alt="Viisi tähteä" height="15px"> Homma toimii lähes ilman googlettamista.</p>
+  		<br>
+	<div class="row">
+    	<div class="col-sm-4 col-lg-2">
+			<img src="html.png" alt="HTML5-logo" width="50px">
+      		<h4>HTML5</h4>
+      		<img src="tahti3.png" alt="3 tähteä" width="50px">
     	</div>
-    	<div class="col-sm-3">
-			<img src="#" alt="">
-     		<h4>LINKEDIN</h4>
-      		<p>linkedin.com/in/annarajainmaa/</p>
+    	<div class="col-sm-4 col-lg-2">
+			<img src="CSS.png" alt="CSS3-logo" width="50px">
+     		<h4>CSS3</h4>
+			<img src="tahti3.png" alt="3 tähteä" width="50px">
+		</div>
+    	<div class="col-sm-4 col-lg-2">
+			<img src="JS.png" alt="JavaScript-logo" width="50px">
+			<h4>JavaScript</h4>
+			<img src="tahti2.png" alt="2 tähteä" width="50px">
+		</div>
+		<div class="col-sm-4 col-lg-2">
+			<img src="bootstrap.png" alt="Bootstrap4-logo" width="50px">
+			<h4>Bootstrap 4</h4>
+			<img src="tahti3.png" alt="3 tähteä" width="50px">
+		</div>
+		<div class="col-sm-4 col-lg-2">
+			<img src="marvellogo.png" alt="Marvel-logo" width="50px">
+			<h4>Marvel Proto</h4>
+			<img src="tahti5.png" alt="5 tähteä" width="50px">
+		</div>
+		<div class="col-sm-4 col-lg-2">
+			<img src="wordpress.png" alt="WordPress-logo" width="50px">
+			<h4>WordPress</h4>
+			<img src="tahti3.png" alt="3 tähteä" width="50px">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4 col-lg-2">
+			<img src="PS.jpg" alt="Photoshop-logo" width="50px">
+			<h4>Photoshop</h4>
+			<img src="tahti5.png" alt="5 tähteä" width="50px">
+		</div>
+		<div class="col-sm-4 col-lg-2">
+			<img src="ID.jpg" alt="InDesign-logo" width="50px">
+			<h4>InDesign</h4>
+			<img src="tahti5.png" alt="5 tähteä" width="50px">
+		</div>
+		<div class="col-sm-4 col-lg-2">
+			<img src="AI.jpg" alt="Illustrator-logo"width="50px">
+			<h4>Illustrator</h4>
+			<img src="tahti2.png" alt="2 tähteä" width="50px">
+		</div>
+		<div class="col-sm-4 col-lg-2">
+			<img src="XD.jpg" alt="Adobe Xd -logo" width="50px">
+			<h4>Adobe Xd</h4>
+			<img src="tahti2.png" alt="2 tähteä" width="50px">
     	</div>
-    	<div class="col-sm-3">
-			<img src="#" alt="">
-      		<h4>GITHUB</h4>
-      		<p>Githubia olen viime aikoina alkanut ottaa haltuun nimellä "roradath".</p>
-    	</div>
-    	<div class="col-sm-3">
-			<img src="#" alt="">
-      		<h4>GITHUB</h4>
-      		<p>Githubia olen viime aikoina alkanut ottaa haltuun nimellä "roradath".</p>
-    	</div>
-  	</div>
-  	<div class="row">
-    	<div class="col-sm-3">
-			<img src="#" alt="">
-      		<h4>SÄHKÖPOSTI</h4>
-      		<p>arajainmaa@gmail.com</p>
-    	</div>
-    	<div class="col-sm-3">
-			<img src="#" alt="">
-     		<h4>LINKEDIN</h4>
-      		<p>linkedin.com/in/annarajainmaa/</p>
-    	</div>
-    	<div class="col-sm-3">
-			<img src="#" alt="">
-      		<h4>GITHUB</h4>
-      		<p>Githubia olen viime aikoina alkanut ottaa haltuun nimellä "roradath".</p>
-    	</div>
-    	<div class="col-sm-3">
-			<img src="#" alt="">
-      		<h4>GITHUB</h4>
-      		<p>Githubia olen viime aikoina alkanut ottaa haltuun nimellä "roradath".</p>
-    	</div>
+		<div class="col-sm-4 col-lg-2">
+			<img src="react.png" alt="React-logo" width="50px">
+			<h4>React</h4>
+			<img src="tahti1.png" alt="1 tähti" width="50px">
+		</div>
+		<div class="col-sm-4 col-lg-2">
+			<img src="musescore.png" alt="MuseScore3-logo" width="50px">
+			<h4>MuseScore</h4>
+			<img src="tahti5.png" alt="5 tähteä" width="50px">
+		</div>
   	</div>
   </div>
  
 
 <!-- Container (Yhteystiedot) -->
 <div id="yhteystiedot" class="container-fluid text-center">
-   <h2>Yhteystiedot</h2>
-  <h4>Ota yhteyttä tai stalkkaa vähän lisää:</h4>
+   <h1 style="color: #91FDD0;">Yhteystiedot</h1>
+  <h2>Ota yhteyttä tai stalkkaa vähän lisää:</h2>
   <br>
   <div class="row" style="padding-top: 10px">
     <div class="col-sm-4">
-		
-      <h4>SÄHKÖPOSTI</h4>
-		<p>arajainmaa@gmail.com</p>
+      <h3>Sähköposti</h3>
 		<a href="mailto:arajainmaa@gmail.com?" target="_top"><img src="gmail.png" alt="Gmail logo"></a>
-		</p>
+		<p>arajainmaa, gmail.com</p>
     </div>
     <div class="col-sm-4">
-		
-      <h4>LINKEDIN</h4>
-		<p>linkedin.com/in/annarajainmaa/</p>
-		  <a href="https://www.linkedin.com/in/annarajainmaa/"><img src="linkedin.png" alt="LinkedIn logo"></a>
+      <h3>LinkedIn</h3>
+		  <a href="https://www.linkedin.com/in/annarajainmaa/" target="_blank"><img src="linkedin.png" alt="LinkedIn logo"></a>
+		  <p>linkedin.com/in/annarajainmaa/</p>
     </div>
     <div class="col-sm-4">
-      <h4>GITHUB</h4>
-      <p>Githubia olen viime aikoina alkanut ottaa haltuun nimellä "roradath".</p>
-		  <a href="https://github.com/roradath?tab=repositories"><img src="github.png" alt="Github logo" style="width:42px;height:42px;border:0;"></a>
+      <h3>GitHub</h3>
+		  <a href="https://github.com/roradath?tab=repositories" target="_blank"><img src="github.png" alt="Github logo" style="width:42px;height:42px;border:0;"></a>
+		  <p>Githubia olen viime aikoina alkanut ottaa haltuun nimellä "roradath".</p>
     </div>
   </div>
   </div>
-
-<!-- Footer -->
-<footer class="container-fluid text-center bg-green">
-  <a href="#myPage" title="To Top"><span class="glyphicon glyphicon-chevron-up"></span></a>
-</footer>
 
 </body>
 </html>
