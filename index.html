@@ -107,6 +107,44 @@
   	color: white;
 	}
 
+	.tooltip {
+  	position: relative;
+  	display: inline-block;
+	}
+
+	.tooltip .tooltiptext {
+  	visibility: hidden;
+  	width: 140px;
+  	background-color: #555;
+  	color: #fff;
+  	text-align: center;
+  	border-radius: 6px;
+  	padding: 5px;
+  	position: absolute;
+  	z-index: 1;
+  	bottom: 150%;
+  	left: 50%;
+  	margin-left: -75px;
+  	opacity: 0;
+  	transition: opacity 0.3s;
+	}
+
+	.tooltip .tooltiptext::after {
+  	content: "";
+  	position: absolute;
+  	top: 100%;
+  	left: 50%;
+  	margin-left: -5px;
+  	border-width: 5px;
+  	border-style: solid;
+  	border-color: #555 transparent transparent transparent;
+	}
+
+	.tooltip:hover .tooltiptext {
+  	visibility: visible;
+  	opacity: 1;
+	}
+
   </style>
   
 </head>
@@ -257,20 +295,20 @@
   <h2>Ota yhteyttä tai stalkkaa vähän lisää:</h2>
   <br>
   <div class="row" style="padding-top: 10px">
-    <div class="col-sm-4">
-      <h3>Sähköposti</h3>
-		<a href="mailto:arajainmaa@gmail.com?" target="_top"><img src="gmail.png" alt="Gmail logo"></a>
-		<p>arajainmaa, gmail.com</p>
+    <div class="col-sm-4">					
+	<img src="mail.png" alt="Sähköposti logo" style="width:42px; height:42px;">
+	<h3>Sähköposti</h3>
+	<p>arajainmaa, gmail, com</p>
     </div>
     <div class="col-sm-4">
-      <h3>LinkedIn</h3>
-		  <a href="https://www.linkedin.com/in/annarajainmaa/" target="_blank"><img src="linkedin.png" alt="LinkedIn logo"></a>
-		  <p>linkedin.com/in/annarajainmaa/</p>
+		<a href="https://www.linkedin.com/in/annarajainmaa/" target="_blank"><img src="linkedin.png" alt="LinkedIn logo" style="width:42px; height:42px;"></a>
+		<h3>LinkedIn</h3>  
+		<p>linkedin.com/in/annarajainmaa/</p>
     </div>
     <div class="col-sm-4">
-      <h3>GitHub</h3>
-		  <a href="https://github.com/roradath?tab=repositories" target="_blank"><img src="github.png" alt="Github logo" style="width:42px;height:42px;border:0;"></a>
-		  <p>Githubia olen viime aikoina alkanut ottaa haltuun nimellä "roradath".</p>
+		<a href="https://github.com/roradath?tab=repositories" target="_blank"><img src="github.png" alt="Github logo" style="width:42px; height:42px;"></a>
+      	<h3>GitHub</h3>
+		<p>Githubia olen viime aikoina alkanut ottaa haltuun nimellä "roradath".</p>
     </div>
   </div>
   </div>
